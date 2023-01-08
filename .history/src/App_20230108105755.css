@@ -1,0 +1,13 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 40px 90px;
+  overflow-y: scroll;
+  height: fit-content;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

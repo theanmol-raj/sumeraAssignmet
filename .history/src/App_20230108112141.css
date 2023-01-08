@@ -1,0 +1,60 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  /* width: 100vw; */
+  padding: 40px 90px;
+  /* overflow-y: scroll; */
+  height: fit-content;
+}
+.logo{
+  height: fit-content;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_items{
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.navbar_items p{
+  margin: 0 1.5rem;  
+}
+.stc_button{
+  padding: 16px;
+  background-color: rgb(10, 132, 226);
+  color: white;
+  border: 0px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-radius: 5px;
+}
+.serbox{
+  justify-content: end;
+  margin-top: 60px;
+  display: flex;
+}
+.serbody{
+  display: flex;
+  /* border-radius: 4px; */
+  border-width: 2px;
+  border-color:rgb(10, 132, 226) ;
+  columns: rgb(10, 132, 226);
+  padding:  16px;
+  align-items: center;
+  width: 24rem;
+  
+}
+
+.ser_inp{
+  font-size:20px ;
+  font-weight:500 ;
+  color: rgb(10, 132, 226);
+}
