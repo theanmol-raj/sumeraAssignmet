@@ -437,7 +437,7 @@ function App() {
               </>
             }
           />
-          <div className=" gridooo">
+          <div className=" grid000">
             {ServicerArr.map(({ title, specs }, y) => (
               <Servicer key={y} title={title} specs={specs} />
             ))}

@@ -590,11 +590,7 @@ line-height: 1.75rem; /* 28px */
 .social img{
   padding: 0 24px;
 }
-.gridooo{
-  display: grid;
-  grid-column: 2;
-  
-  }
+
 
 @media only screen and (max-width :800px){
   .navbar_items {

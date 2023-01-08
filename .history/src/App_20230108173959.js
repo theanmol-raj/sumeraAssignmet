@@ -9,14 +9,8 @@ import Column from "./Components/Column";
 import banner12 from "./Assets/Vector-4.png";
 import Hocrux1 from "./Components/Hocrux1";
 import Jobber from "./Components/Jobber";
-import banner15 from "./Assets/Vector-5.png";
-import banner16 from "./Assets/Vector-6.png";
-import banner17 from "./Assets/Vector-7.png";
-import banner18 from "./Assets/Vector-8.png";
 import banner13 from "./Assets/Vector-3.png";
 import Comment from "./Components/Comment";
-import Servicer from "./Components/Servicer";
-import banner14 from "./Assets/Group 34.png";
 
 function App() {
   const Dedicated = [
@@ -65,31 +59,6 @@ function App() {
     },
   ];
 
-  const ServicerArr = [
-    {
-      title: `Services`,
-      specs: [
-        "Products",
-        "Solutions",
-        "Assurance",
-        "FAQ",
-        "Working at Varal-Singhania",
-      ],
-    },
-    { title: `Policies`, specs: ["Privacy Policy", "Terms & Conditions"] },
-    { title: `About`, specs: ["About Us", "Contact Us"] },
-    {
-      title: `Address`,
-      specs: [
-        "608 One Lake Plaza, Cluster T",
-        "Al Sarayat Street, Jumeirah",
-        "Lake Towers",
-        "Dubai",
-        "United Arab Emirates",
-      ],
-    },
-  ];
-
   return (
     <div className="App">
       {/* Navbar */}
@@ -125,9 +94,6 @@ function App() {
             Get started on fulfilling <br /> your Dubai or UAE <br />
             dream.
           </h2>
-          <div className="bancont2">
-            <img className=" banner2" src={banner} />
-          </div>
           <h2 className="B">UAE & Offshore Company</h2>
           <h2 className="C">
             We provide you with information about UAE or
@@ -203,82 +169,14 @@ function App() {
             </p>
             <p className="col_quote">Claim a Free Quote</p>
           </div>
-          <Card
-            title={"Bank Acccount Setup"}
-            text={
-              <>
-                There are many banks in the United <br />
-                Arab Emirates [UAE]. Both locally <br />
-                owned and branches of <br />
-                multinational ones. Foreign banks <br />
-                adjust according to their parent s <br />
-                strategies and have changed local <br />
-                requirements overnight in the past. <br />
-                But we are here to help you.
-              </>
-            }
-          />
-          <Card
-            title={"Advice & Guidanc"}
-            text={
-              <>
-                All activities in the UAE are licensed.
-                <br />
-                Whether manufacturing, finance,
-                <br />
-                trading, marketing, consultancy or
-                <br />
-                restaurants. In some countries only
-                <br />
-                manufacturing is licensed. In others
-                <br />
-                there is a threshold below which
-                <br />
-                business are encouraged. Get our
-                <br />
-                insightfull guidance today
-              </>
-            }
-          />
+          <Card />
+          <Card />
         </div>
 
         <div className="column2">
-          <Card
-            title={"UAE Company Visas"}
-            text={
-              <>
-                Your application for visas is critical
-                <br />
-                especially if you intend to move to
-                <br />
-                Dubai. This becomes even more
-                <br />
-                urgent if your family will also move
-                <br />
-                on your behalf smoothly so that you
-                <br />
-                may only focus on doing what
-                <br />
-                matters most to you.
-              </>
-            }
-          />
+          <Card />
 
-          <Card
-            title={"Registration Document Perparation"}
-            text={
-              <>
-                There are many banks in the United <br />
-                Arab Emirates [UAE]. Both locally <br />
-                owned and branches of <br />
-                multinational ones. Foreign banks <br />
-                adjust according to their parent s <br />
-                strategies and have changed local <br />
-                requirements overnight in the past. <br />
-                But we are here to help you.
-              </>
-            }
-          />
+          <Card />
 
           <div className="col_2">
             <p className="col2_content">
@@ -351,6 +249,7 @@ function App() {
             text={
               <>
                 How to start an Offshore
+
                 <br />
                 company formation in Dubai
               </>
@@ -360,12 +259,11 @@ function App() {
           />
 
           <Jobber
-            tu
             text={
               <>
-                SEO Dubai: Who benefits
+                How to start a company
                 <br />
-                the most?
+                formation in Dubai
               </>
             }
             time={`5 Minutes`}
@@ -384,51 +282,27 @@ function App() {
 
           {/* comments */}
 
-          <Comment
-            comm={
-              <>
-                {" "}
-                "I am very happy with them. I'll <br />
+          <Comment comm={<> "I am very happy with them. I'll <br />
                 continue to use their services in <br />
                 future & highly recommend them <br />
-                to anyone,"
-              </>
-            }
-            name={"Muhib Abrar"}
-            link={banner13}
-          />
+                to anyone,"</>} name={"Muhib Abrar"} link ={banner13} />
 
-          <Comment
-            comm={
-              <>
-                {" "}
-                "Rama has a high level of integrity, <br />
+
+                <Comment comm={<> "Rama has a high level of integrity, <br />
                 intellect, knowledge of his <br />
                 business, resourcefulness and <br />
-                humanity,"
-              </>
-            }
-            name={"Colin Saldahna"}
-            link={banner13}
-          />
+                humanity,"</>} name={"Colin Saldahna"} link ={banner13} />
 
-          <Comment
-            comm={
-              <>
-                {" "}
-                "Your advise was so complete that I <br />
+                <Comment comm={<> "Your advise was so complete that I <br />
                 actually realized how beneficial <br />
                 this would be to my clients and my <br />
-                business.
-              </>
-            }
-            name={"Mark Swann"}
-            link={banner13}
-          />
+                business.</>} name={"Mark Swann"} link ={banner13} />
+
+          
         </div>
         {/* 2nd col */}
 
-        <div className="www">
+        <div className="flex flex-col space-y-4 w-5/12 px-20">
           <Hocrux1
             text={
               <>
@@ -437,36 +311,67 @@ function App() {
               </>
             }
           />
-          <div className=" gridooo">
-            {ServicerArr.map(({ title, specs }, y) => (
-              <Servicer key={y} title={title} specs={specs} />
-            ))}
+
+          <div className="text-xl  text-gray-400">
+            <p className="text-gray-800 font-bold">Services</p>
+            <p>Products</p>
+            <p>Solutions</p>
+            <p>Assurance</p>
+            <p>FAQ</p>
+            <p>Working at Varal-Singhania</p>
           </div>
 
-          <div>
-            <div style={{ scale: "1.05" }} className="last_header">
-              <p className="last_head">Subscribe Now</p>
-              <p>
-                Subscribe now to receive our <br />
-                Newsletters about amazing <br />
-                opportunities in Dubai
-              </p>
-            </div>
-            <div className="last_email">
-              <input
-                className="email"
-                type="email"
-                placeholder="Enter email address"
-              />
-              <img className="email_img" src={banner14} />
-            </div>
+          <div className="text-xl  text-gray-400">
+            <p className="text-gray-800 font-bold">Policies</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
           </div>
 
-          <div className="social">
-            <img style={{ paddingLeft: "0px" }} src={banner15} />
-            <img src={banner16} />
-            <img src={banner17} />
-            <img src={banner18} />
+          <div className="text-xl  text-gray-400">
+            <p className="text-gray-800 font-bold">About</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
+          </div>
+
+          <div className="text-xl  text-gray-400">
+            <p className="text-gray-800 font-bold">Address</p>
+            <p>
+              608 One Lake Plaza, Cluster T, Al Sarayat Street, Jumeirah Lake
+              Tower Dubai United Arab Emirates
+            </p>
+            <br />
+            <p>
+              Office Hours: Sunday to <br />
+              Thursday 8:30 AM to 6:30 PM <br />
+              [GMT+4] <br />
+              M: +971 55 794 2016 <br />
+              O: +971 4 447 2061 <br />
+            </p>
+          </div>
+
+          <div className="text-xl  text-gray-400">
+            <p className="text-gray-800 font-bold">Subscribe Now</p>
+            <p>
+              Subscribe now to receive our <br />
+              Newsletters about amazing <br />
+              opportunities in Dubai
+            </p>
+          </div>
+
+          <div className="flex">
+            <input
+              className="items-center w-3/4 h-14"
+              type="email"
+              placeholder="Enter email address"
+            />
+            <img className="h-14" src="/Assets/Group 34.png" />
+          </div>
+
+          <div className="flex space-x-6">
+            <img src="/Assets/Vector-5.png" />
+            <img src="/Assets/Vector-6.png" />
+            <img src="/Assets/Vector-7.png" />
+            <img src="/Assets/Vector-8.png" />
           </div>
         </div>
       </div>
